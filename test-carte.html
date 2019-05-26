@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Test carte</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="leaflet.css" />
+</head>
+
+<body>
+<div id="carte" style="width: 600px; height: 400px;">
+</div>
+
+<script src="leaflet.js"></script>
+<script>
+	var map = L.map("carte");
+	map.setView({lat: 48.9559156, lon: 2.3388115999999854}, 10);
+	url = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
+	var layer = L.tileLayer(url);
+	layer.addTo(map);
+	var m = L.marker ({lat: 48.9559156 ,  lon: 2.3388115999999854});
+	m.addTo(map);
+	m.bindPopup('IUT');
+</script>
+</body>
+
+</html>
