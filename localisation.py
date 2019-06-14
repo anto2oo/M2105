@@ -1,4 +1,5 @@
 #!/bin/python
+# Antonin Guyot
 # coding: utf-8
 
 from mod_python import Session
