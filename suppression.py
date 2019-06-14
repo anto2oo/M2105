@@ -1,6 +1,6 @@
 #!/usr/bin/python
-# Antonin Guyot
 # coding: utf-8
+# Antonin Guyot
 
 from mod_python import Session
 import fonctions, psycopg2

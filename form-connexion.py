@@ -1,6 +1,6 @@
 #!/bin/python
-# Antonin Guyot
 # coding: utf-8
+# Antonin Guyot
 
 import fonctions
 
