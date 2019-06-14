@@ -26,11 +26,11 @@ def index(req):
 			table_contents += "<tr> <td>Adresse</td> <td>" + user[4] + "</td></tr>"
 		if user[5] != 0 and user[6] != 0:
 			map_contents = """
-			<link rel="stylesheet" href="leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" />
 <div id="carte" style="width: 600px; height: 400px;">
 </div>
 
-<script src="leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
 <script>
 	var map = L.map("carte");
 	map.setView({lat: """ + str(user[5]) + """, lon: """ + str(user[6]) + """}, 10);

@@ -19,11 +19,11 @@ def index(req):
 <label for="search">Rechercher un contact :</label>
 <input type="text" id="search" onkeyup="chargementMarqueurs(this.value)"/>
 <br><br>
-<link rel="stylesheet" href="leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" />
 <div id="carte" style="width: 600px; height: 400px;">
 </div>
 
-<script src="leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
 <script>
 var map = L.map("carte");
 url = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
