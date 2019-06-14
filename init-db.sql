@@ -20,3 +20,12 @@ CREATE TABLE CONTACT (
 
 INSERT INTO UTIL(login, mdp) VALUES ('root', 'root');
 INSERT INTO UTIL(login, mdp) VALUES ('user', 'user');
+
+INSERT INTO 
+	CONTACT(nom, email, tel, adresse, latitude, longitude, id_util) 
+	VALUES ('Antonin Guyot', 'antonin.guyot75@gmail.com', '0631616085', '24 rue Sibuet, 75012 Paris', '46.6034', '1.88833', 1);
+
+INSERT INTO 
+	CONTACT(nom, email, tel, adresse, latitude, longitude, id_util) 
+	VALUES ('Brian Merlin', 'brianhabba@gmail.com', '0143421772', '82 rue Royale, Saint-Mesmes', '35.6034', '1.88833', 1);
+
