@@ -10,7 +10,7 @@ def index(req):
 	 
 	_db = fonctions.connexionBD()
 	_cursor = _db.cursor()
-	_cursor.execute("SELECT * FROM Util WHERE login='{}'".format(req.form["login"]))
+	_cursor.execute("SELECT * FROM Util WHERE login = %s", (req.form["login"],))
 	if _cursor.fetchone() is not None:
 		req.write(json.dumps({"taken": True}))
 	else:
